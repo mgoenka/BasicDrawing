@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
+import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -110,6 +111,18 @@ public class ShapeSelectorView extends View {
 	        return true;
 	    }
 	    return result;
+	}
+	
+	@Override
+	protected Parcelable onSaveInstanceState() {
+		// TODO Auto-generated method stub
+		return super.onSaveInstanceState();
+	}
+	
+	@Override
+	protected void onRestoreInstanceState(Parcelable state) {
+		// TODO Auto-generated method stub
+		super.onRestoreInstanceState(state);
 	}
 	
 	protected Path getTrianglePath() {
